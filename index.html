@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="search-container">
+        <form>
+            <label for="search">Enter a location (city name)</label>
+            <input type="text" id="search">
+            <button id="search">Search</button>
+        </form>
+    </div>
+    <div class="content">
+        <div class="location">
+            The weather for <span class="disposable location-highlight"></span>
+            <div class="coordinates-container">
+                <div class="lat container">
+                    <div class="label">Latitude</div>
+                    <div class="lat disposable"></div>
+                </div>
+                <div class="lon container">
+                    <div class="label">Latitude</div>
+                    <div class="lon disposable"></div>
+                </div>
+            </div>
+        </div>
+        <div class="temp-container">
+            <div class="normal-temp container">
+                <div class="label">Temperature</div>
+                <div class="normal-temp disposable"></div>
+            </div>
+            <div class="feels container">
+                <div class="label">Feels like</div>
+                <class class="feels disposable"></class>
+            </div>
+            <div class="min container">
+                <div class="label">Minimal</div>
+                <class class="min disposable"></class>
+            </div>
+            <div class="max container">
+                <div class="label">Maximal</div>
+                <class class="max disposable"></class>
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="weather-img container">
+                <img src="#" alt="show">
+            </div>
+            <div class="weather container">
+                <div class="label">The weather</div>
+                <div class="weather disposable"></div>
+            </div>
+            <div class="description container">
+                <div class="label">Weather details</div>
+                <div class="description disposable"></div>
+            </div>
+        </div>
+        <div class="wind-container">
+            <div class="speed container">
+                <div class="label">Wind speed</div>
+                <div class="wind speed disposable"></div>
+            </div>
+            <div class="deg container">
+                <div class="label">Wind direction</div>
+                <div class="deg disposable"></div>
+            </div>
+            <div class="cloud container">
+                <div class="label">Cloudiness</div>
+                <div class="cloud disposable"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="me">Brought to you by TS</div>
+        <div class="credits">API courtesy of https://openweathermap.org/</div>
+    </footer>
+</body>
+</html>
